@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titre }}</title>
+    <!-- Aucun échappement explicite sur `titre` → risque faible ici, mais bonne pratique : {{ titre|e }} -->
+</head>
+</head>
+<body>
+<h1>{{ titre }}</h1>
+ <!-- Aucun échappement explicite sur `titre` → risque faible ici, mais bonne pratique : {{ titre|e }} -->
+<p>{{ message }}</p>
+<!-- Même remarque : `message` n’est pas échappé explicitement → si ce contenu vient d’un utilisateur, XSS possible -->
+</body>
+</html>

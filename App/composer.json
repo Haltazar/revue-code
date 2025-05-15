@@ -1,0 +1,22 @@
+{
+  "name": "vendor_name/projet",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "julien",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "php": "8.3.*",
+    "twig/twig": "^3.21",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
